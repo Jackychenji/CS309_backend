@@ -1,0 +1,269 @@
+{
+    "code": 200,
+    "data": {
+        "menu": [
+            {
+                "name": "sustech",
+                "path": "/sustech",
+                "meta": {
+                    "title": "主页",
+                    "icon": "el-icon-house",
+                    "type": "menu"
+                },
+                "component": "sustech"
+            },
+            {
+                "name": "dormitory",
+                "path": "/dormitory",
+                "meta": {
+                    "title": "宿舍信息",
+                    "icon": "el-icon-PartlyCloudy",
+                    "type": "menu"
+                },
+                "children": [
+                    {
+                        "path": "/dormitory/home",
+                        "name": "home",
+                        "meta": {
+                            "title": "宿舍信息主页",
+                            "icon": "el-icon-Pouring"
+                        },
+                        "component": "dormitory/home"
+                    },
+                    {
+                        "path": "/dormitory/information",
+                        "name": "dormitoryInformation",
+                        "meta": {
+                            "title": "宿舍信息",
+                            "icon": "el-icon-grid",
+                            "type": "menu"
+                        },
+                        "children": [
+                            {
+                                "path": "/dormitory/information/hupan",
+                                "name": "hupan",
+                                "meta": {
+                                    "title": "湖畔宿舍区",
+                                    "icon": "el-icon-Watermelon",
+                                    "type": "menu"
+                                },
+                                "component": "dormitory/information/hupan"
+                            },
+                            {
+                                "path": "/dormitory/information/erqi",
+                                "name": "erqi",
+                                "meta": {
+                                    "title": "二期宿舍区",
+                                    "icon": "el-icon-Pear",
+                                    "type": "menu"
+                                },
+                                "component": "dormitory/information/erqi"
+                            },
+                            {
+                                "path": "/dormitory/information/liyuan",
+                                "name": "liyuan",
+                                "meta": {
+                                    "title": "荔园宿舍区",
+                                    "icon": "el-icon-Sugar",
+                                    "type": "menu"
+                                },
+                                "component": "dormitory/information/liyuan"
+                            },
+                            {
+                                "path": "/dormitory/information/xinyuan",
+                                "name": "xinyuan",
+                                "meta": {
+                                    "title": "欣园宿舍区",
+                                    "icon": "el-icon-Coffee",
+                                    "type": "menu"
+                                },
+                                "component": "dormitory/information/xinyuan"
+                            }
+                        ]
+                    },
+                    {
+                        "path": "/dormitory/search",
+                        "name": "search",
+                        "meta": {
+                            "title": "宿舍信息列表",
+                            "icon": "el-icon-Moon"
+                        },
+                        "component": "dormitory/search"
+                    }
+                ]
+            },
+            {
+                "name": "personal information",
+                "path": "",
+                "meta": {
+                    "title": "个人信息",
+                    "icon": "el-icon-user",
+                    "type": "menu"
+                },
+                "children": [
+                    {
+                        "name": "userCenter",
+                        "path": "/usercenter",
+                        "meta": {
+                            "title": "帐号信息",
+                            "icon": "el-icon-user"
+                        },
+                        "component": "userCenter"
+                    }
+                ]
+            },
+            {
+                "name": "manage student",
+                "path": "/manageStu",
+                "meta": {
+                    "title": "管理学生",
+                    "icon": "el-icon-user",
+                    "type": "menu"
+                },
+                "children": [
+                    {
+                        "path": "/manageStu/edit",
+                        "name": "editStu",
+                        "meta": {
+                            "title": "修改学生信息",
+                            "icon": "el-icon-folder"
+                        },
+                        "component": "manageStu/edit"
+                    },
+                    {
+                        "path": "/manageStu/upload",
+                        "name": "uploadStu",
+                        "meta": {
+                            "title": "上传学生信息",
+                            "icon": "el-icon-collection"
+                        },
+                        "component": "manageStu/upload"
+                    }
+                ]
+            },
+            {
+                "name": "manage teacher",
+                "path": "/manageTeacher",
+                "meta": {
+                    "title": "管理老师",
+                    "icon": "el-icon-UserFilled",
+                    "type": "menu"
+                },
+                "children": [
+                    {
+                        "path": "/manageTeacher/edit",
+                        "name": "editTeacher",
+                        "meta": {
+                            "title": "修改老师信息",
+                            "icon": "el-icon-EditPen"
+                        },
+                        "component": "manageTeacher/edit"
+                    },
+                    {
+                        "path": "/manageTeacher/upload",
+                        "name": "uploadTeacher",
+                        "meta": {
+                            "title": "上传老师信息",
+                            "icon": "el-icon-Top"
+                        },
+                        "component": "manageTeacher/upload"
+                    }
+                ]
+            },
+            {
+                "name": "dormitory_change",
+                "path": "/dormChange",
+                "meta": {
+                    "title": "修改宿舍信息",
+                    "icon": "el-icon-refresh-right",
+                    "type": "menu"
+                },
+                "children": [
+                    {
+                        "name": "dorm_upload",
+                        "path": "/dormChange/upload",
+                        "meta": {
+                            "title": "上传宿舍信息",
+                            "icon": "el-icon-top"
+                        },
+                        "component": "dormChange/upload"
+                    },
+                    {
+                        "name": "dorm_edit",
+                        "path": "/dormChange/edit",
+                        "meta": {
+                            "title": "修改已有宿舍信息",
+                            "icon": "el-icon-edit"
+                        },
+                        "component": "dormChange/edit"
+                    }
+                ]
+            },
+            {
+                "name": "manage dormitory selection",
+                "path": "/manageSelect",
+                "meta": {
+                    "title": "设置选择时间",
+                    "icon": "el-icon-timer",
+                    "type": "menu"
+                },
+                "children": [
+                    {
+                        "path": "/manageSelect/time",
+                        "name": "editSelect",
+                        "meta": {
+                            "title": "修改选房时间",
+                            "icon": "el-icon-MagicStick"
+                        },
+                        "component": "manageSelect/time"
+                    },
+                    {
+                        "path": "/manageSelect/exchange",
+                        "name": "exchangeDorm",
+                        "meta": {
+                            "title": "宿舍更换详情",
+                            "icon": "el-icon-guide"
+                        },
+                        "component": "manageSelect/exchange"
+                    },
+                    {
+                        "path": "/manageSelect/export",
+                        "name": "exportDorm",
+                        "meta": {
+                            "title": "宿舍选择详情",
+                            "icon": "el-icon-monitor"
+                        },
+                        "component": "manageSelect/export"
+                    }
+                ]
+            },
+            {
+                "path": "/other/about",
+                "name": "about",
+                "meta": {
+                    "title": "关于",
+                    "icon": "el-icon-info-filled",
+                    "type": "menu"
+                },
+                "component": "other/about"
+            }
+        ],
+        "permissions": [
+            "list.add",
+            "list.edit",
+            "list.delete",
+            "user.add",
+            "user.edit",
+            "user.delete"
+        ],
+        "dashboardGrid": [
+            "welcome",
+            "ver",
+            "time",
+            "video",
+            "information",
+            "process"
+        ]
+    },
+    "message": ""
+}

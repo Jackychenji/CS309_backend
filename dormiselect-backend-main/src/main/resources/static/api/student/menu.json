@@ -1,0 +1,248 @@
+{
+    "code": 200,
+    "data": {
+        "menu": [
+            {
+                "name": "sustech",
+                "path": "/sustech",
+                "meta": {
+                    "title": "主页",
+                    "icon": "el-icon-house",
+                    "type": "menu"
+                },
+                "component": "sustech"
+            },
+            {
+                "name": "user",
+                "path": "/user",
+                "meta": {
+                    "title": "个人信息",
+                    "icon": "el-icon-user",
+                    "type": "menu"
+                },
+                "component": "user"
+            },
+            {
+                "name": "dormitory",
+                "path": "/dormitory",
+                "meta": {
+                    "title": "宿舍信息",
+                    "icon": "el-icon-PartlyCloudy",
+                    "type": "menu"
+                },
+                "children": [
+                    {
+                        "path": "/dormitory/home",
+                        "name": "dormitoryHome",
+                        "meta": {
+                            "title": "宿舍信息主页",
+                            "icon": "el-icon-Pouring"
+                        },
+                        "component": "dormitory/home"
+                    },
+                    {
+                        "path": "/dormitory/information",
+                        "name": "dormitoryInformation",
+                        "meta": {
+                            "title": "宿舍信息",
+                            "icon": "el-icon-grid",
+                            "type": "menu"
+                        },
+                        "children": [
+                            {
+                                "path": "/dormitory/information/hupan",
+                                "name": "hupan",
+                                "meta": {
+                                    "title": "湖畔宿舍区",
+                                    "icon": "el-icon-Watermelon",
+                                    "type": "menu"
+                                },
+                                "component": "dormitory/information/hupan"
+                            },
+                            {
+                                "path": "/dormitory/information/erqi",
+                                "name": "erqi",
+                                "meta": {
+                                    "title": "二期宿舍区",
+                                    "icon": "el-icon-Pear",
+                                    "type": "menu"
+                                },
+                                "component": "dormitory/information/erqi"
+                            },
+                            {
+                                "path": "/dormitory/information/liyuan",
+                                "name": "liyuan",
+                                "meta": {
+                                    "title": "荔园宿舍区",
+                                    "icon": "el-icon-Sugar",
+                                    "type": "menu"
+                                },
+                                "component": "dormitory/information/liyuan"
+                            },
+                            {
+                                "path": "/dormitory/information/xinyuan",
+                                "name": "xinyuan",
+                                "meta": {
+                                    "title": "欣园宿舍区",
+                                    "icon": "el-icon-Coffee",
+                                    "type": "menu"
+                                },
+                                "component": "dormitory/information/xinyuan"
+                            }
+                        ]
+                    },
+                    {
+                        "path": "/dormitory/search",
+                        "name": "dormitorySearch",
+                        "meta": {
+                            "title": "宿舍信息列表",
+                            "icon": "el-icon-Moon"
+                        },
+                        "component": "dormitory/search"
+                    },
+                    {
+                        "path": "/dormitory/change",
+                        "name": "dormitoryChange",
+                        "meta": {
+                            "title": "宿舍交换",
+                            "icon": "el-icon-Refresh"
+                        },
+                        "component": "dormitory/change"
+                    }
+                ]
+            },
+            {
+                "name": "team",
+                "path": "/team",
+                "meta": {
+                    "title": "队伍信息",
+                    "icon": "el-icon-Connection",
+                    "type": "menu"
+                },
+                "children": [
+                    {
+                        "name": "teamHome",
+                        "path": "/team/home",
+                        "meta": {
+                            "title": "队伍信息主页",
+                            "icon": "el-icon-Headset"
+                        },
+                        "component": "team/home"
+                    },
+                    {
+                        "name": "teamSearch",
+                        "path": "/team/search",
+                        "meta": {
+                            "title": "队伍信息列表",
+                            "icon": "el-icon-Tickets"
+                        },
+                        "component": "team/search"
+                    },
+                    {
+                        "name": "collect",
+                        "path": "/team/collect",
+                        "meta": {
+                            "title": "收藏宿舍",
+                            "icon": "el-icon-Star"
+                        },
+                        "component": "team/collect"
+                    },
+                    {
+                        "name": "grab",
+                        "path": "/team/grab",
+                        "meta": {
+                            "title": "选择宿舍",
+                            "icon": "el-icon-Select"
+                        },
+                        "component": "team/grab"
+                    },
+                    {
+                        "name": "apply",
+                        "path": "/team/apply",
+                        "meta": {
+                            "title": "队伍申请",
+                            "icon": "el-icon-Promotion"
+                        },
+                        "component": "team/apply"
+                    }
+                ]
+            },
+            {
+                "name": "information",
+                "path": "/message",
+                "meta": {
+                    "title": "消息信息",
+                    "icon": "el-icon-bell",
+                    "type": "menu"
+                },
+                "children": [
+                    {
+                        "name": "private message",
+                        "path": "/message/private",
+                        "meta": {
+                            "title": "私信消息",
+                            "icon": "el-icon-ChatRound"
+                        },
+                        "component": "message/private"
+                    },
+                    {
+                        "name": "group message",
+                        "path": "/message/group",
+                        "meta": {
+                            "title": "队伍消息",
+                            "icon": "el-icon-ChatSquare"
+                        },
+                        "component": "message/group"
+                    }
+                ]
+            },
+            {
+                "path": "/announcement/view_student",
+                "name": "view_student",
+                "meta": {
+                    "title": "公告信息",
+                    "icon": "el-icon-Bell",
+                    "type": "menu"
+                },
+                "component": "announcement/view_student"
+            },
+            {
+                "path": "/Notification",
+                "name": "Notification",
+                "meta": {
+                    "title": "通知信息",
+                    "icon": "el-icon-Bell",
+                    "type": "menu"
+                },
+                "component": "Notification"
+            },
+            {
+                "path": "/other/about",
+                "name": "about",
+                "meta": {
+                    "title": "关于",
+                    "icon": "el-icon-info-filled",
+                    "type": "menu"
+                },
+                "component": "other/about"
+            }
+        ],
+        "permissions": [
+            "list.add",
+            "list.edit",
+            "list.delete",
+            "user.add",
+            "user.edit",
+            "user.delete"
+        ],
+        "dashboardGrid": [
+            "welcome",
+            "team",
+            "time",
+            "video",
+            "information",
+            "process"
+        ]
+    },
+    "message": ""
+}

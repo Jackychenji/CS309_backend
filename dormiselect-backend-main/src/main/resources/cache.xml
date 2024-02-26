@@ -1,0 +1,7 @@
+<hazelcast
+        xsi:schemaLocation=""
+        xmlns="http://www.hazelcast.com/schema/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <cache name="buckets">
+        <management-enabled>true</management-enabled>
+    </cache>
+</hazelcast>
